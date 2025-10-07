@@ -1,0 +1,14 @@
+# Core Discord bot framework
+discord.py==2.4.0
+
+# For reading .env files (Discord token, guild ID, UPI ID)
+python-dotenv==1.0.1
+
+# Web server (optional keep-alive endpoint for hosting on Render/Replit)
+Flask==3.0.3
+
+# Date/time helpers (for fixtures, schedules, etc.)
+pytz==2024.1
+
+# Optional utilities (safe JSON file access, file locking)
+aiofiles==24.1.0
