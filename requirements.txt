@@ -1,17 +1,2 @@
-# Discord bot framework
-discord.py==2.4.0
-
-# Environment variables loader (.env)
-python-dotenv==1.0.1
-
-# Web server for keep-alive (Render/Replit)
-Flask==3.0.3
-
-# Timezone and scheduling utilities
-pytz==2024.1
-
-# Async file handling (for JSON data)
-aiofiles==24.1.0
-
-# Optional: HTTP requests (if you want to validate UPI payments via APIs)
-requests==2.32.0
+discord.py
+flask
