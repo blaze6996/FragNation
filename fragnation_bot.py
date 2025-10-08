@@ -20,6 +20,20 @@ import random
 import string
 from dotenv import load_dotenv
 from typing import Optional
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+Thread(target=run).start()
+
 
 # ---------------- Config & Environment ----------------
 load_dotenv()
@@ -746,3 +760,4 @@ async def on_command_error(ctx: commands.Context, error):
 # ---------------- Run ----------------
 if __name__ == "__main__":
     bot.run(TOKEN)
+
