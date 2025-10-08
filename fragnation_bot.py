@@ -92,6 +92,7 @@ def mention_or_id(user_id: int) -> str:
 # ---------------- On ready: setup server resources ----------------
 @bot.event
 async def on_ready():
+    await bot.change_presence(activity=discord.Streaming(name="FNCT - Valorant", url="https://www.youtube.com/@miniyuvi/streams"))
     print(f"✅ Logged in as {bot.user} (id: {bot.user.id})")
     # ensure channels/roles in each guild we are in (prefer using GUILD_ID if provided)
     guilds = bot.guilds
@@ -760,4 +761,5 @@ async def on_command_error(ctx: commands.Context, error):
 # ---------------- Run ----------------
 if __name__ == "__main__":
     bot.run(TOKEN)
+
 
